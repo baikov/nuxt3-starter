@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   runtimeConfig: {
     // apiSecret: '123',
@@ -19,20 +20,22 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-vitest',
     '@nuxt/image-edge',
+    '@nuxtjs/google-fonts',
+    // '@nuxtjs/tailwindcss',
     //   "nuxt-headlessui",
     //   "@pinia/nuxt",
   ],
   experimental: {
     reactivityTransform: true,
   },
-  // css: ["@/assets/css/main.css"],
-  // postcss: {
-  //   plugins: {
-  //     tailwindcss: {},
-  //     autoprefixer: {},
-  //     ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
-  //   },
-  // },
+  css: ['@/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+      ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}),
+    },
+  },
   vueuse: {
     ssrHandlers: true,
   },
@@ -45,4 +48,14 @@ export default defineNuxtConfig({
   image: {
     domains: ['fakestoreapi.com'],
   },
+  googleFonts: {
+    families: {
+      Nunito: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
+  },
+//   tailwindcss: {
+//     config: {
+//       plugins: [tailwindTypography],
+//     },
+//   },
 })
