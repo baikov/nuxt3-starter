@@ -27,7 +27,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: 🚧 Set up project
-        run: yarn prepare
+        run: yarn postinstall
 
       - name: 🧪 Test project
         run: yarn test
