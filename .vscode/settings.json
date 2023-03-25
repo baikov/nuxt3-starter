@@ -1,0 +1,37 @@
+{
+  /* Tailwindcss Setting */
+  // "css.validate": false,
+  // "editor.quickSuggestions": {
+  //   "strings": true
+  // },
+  // "tailwindCSS.includeLanguages": {
+  //   "plaintext": "html"
+  // },
+
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "volar.completion.preferredTagNameCase": "pascal",
+  "volar.completion.preferredAttrNameCase": "kebab",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.language": "en,ru",
+  "cSpell.words": [
+    "antfu",
+    "composables",
+    "headlessui",
+    "heroicons",
+    "Iconify",
+    "nuxt",
+    "nuxtjs",
+    "pinia",
+    "tailwindcss",
+    "Unplugin",
+    "vite",
+    "vueuse"
+  ],
+}
